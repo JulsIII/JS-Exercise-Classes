@@ -117,7 +117,6 @@ class Car {
 }
 
 
-
 /*
   TASK 3
     - Write a Lambdasian class.
@@ -156,8 +155,20 @@ class Lambdasian {
         + `demo` receives a `subject` string as an argument and returns the phrase 'Today we are learning about {subject}' where subject is the param passed in.
         + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
 */
-class Instructor {
 
+class Instructor extends Lambdasian{
+  constructor(atribs){
+    super(atribs);
+    this.specialty = atribs.specialty;
+    this.favLanguage = atribs.favLanguage;
+    this.catchPhrase = atribs.catchPhrase;
+     }
+     demo(subject){
+      return `Today we are learning about ${subject}' where subject is the param passed in.`
+     };
+     grade(student, subject){
+      return `${student.name} receives a perfect score on ${subject}`
+     };
 }
 
 /*
@@ -175,6 +186,7 @@ class Instructor {
         + `PRAssignment` a method that receives a subject as an argument and returns `student.name has submitted a PR for {subject}`
         + `sprintChallenge` similar to PRAssignment but returns `student.name has begun sprint challenge on {subject}`
 */
+
 class Student {
 
 }
