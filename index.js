@@ -41,10 +41,40 @@ class Airplane {
 */
 
 class Person {
+    constructor(name, age){
+      this.name = name;
+      this.age = age;
+      this.stomach = [];
+    }
+      eat(edible){
+        if(this.stomach.length < 10){
+          this.stomach.push(edible);
+          }
+      }
+      poop(){
+        this.stomach = [];
+      }
+      toString(){
+        return `${this.name}, ${this.age}`;
+      }
+  }
 
+  // const personOne = new Person({
+  //   name: 'Milly',
+  //   age: 20
+  // });
+  // const personTwo = new Person({
+  //   name: 'Chepper', 
+  //   age: 29)
+  // });
+  // const personThree = new Person({
+  //   name: 'CptPants', 
+  //   age: 24
+  // });
 
-  
-}
+  // console.log(personOne.toString());
+  // console.log(personOne.toString());
+  // console.log(personOne.toString());
 
 /*
   TASK 2
