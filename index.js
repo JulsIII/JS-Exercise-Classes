@@ -67,14 +67,8 @@ class Person {
   //   name: 'Chepper', 
   //   age: 29)
   // });
-  // const personThree = new Person({
-  //   name: 'CptPants', 
-  //   age: 24
-  // });
-
   // console.log(personOne.toString());
-  // console.log(personOne.toString());
-  // console.log(personOne.toString());
+  // console.log(personTwo.toString());
 
 /*
   TASK 2
@@ -115,7 +109,6 @@ class Car {
         }
   }
 }
-
 
 /*
   TASK 3
